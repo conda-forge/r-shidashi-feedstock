@@ -1,11 +1,11 @@
-About r-shidashi
-================
+About r-shidashi-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shidashi-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dipterix/shidashi
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-shidashi-feedstock/blob/main/LICENSE.txt)
 
 Summary: A template system based on 'AdminLTE3' (<https://adminlte.io/themes/v3/>) theme. Comes
 with default theme that can be easily customized. Developers can upload modified
