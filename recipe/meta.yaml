@@ -1,4 +1,4 @@
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shidashi_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shidashi/shidashi_{{ version }}.tar.gz
-  sha256: e722837612e2077352617288674e1d689197a2bb8cbd050aa82f5d0f19a9778c
+  sha256: 927a82d361e97f6e156cd16e0174812f4134bcc1c64836f6bab696af37b0befd
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
