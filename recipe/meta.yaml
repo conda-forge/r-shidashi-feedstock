@@ -1,4 +1,4 @@
-{% set version = "0.1.6" %}
+{% set version = "0.1.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shidashi_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shidashi/shidashi_{{ version }}.tar.gz
-  sha256: 927a82d361e97f6e156cd16e0174812f4134bcc1c64836f6bab696af37b0befd
+  sha256: a928564dea05690c9d988edc54d0134cf928210c746339e97687d1c5bea569c0
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
