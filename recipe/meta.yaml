@@ -1,4 +1,4 @@
-{% set version = "0.1.6" %}
+{% set version = "0.1.8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/shidashi_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/shidashi/shidashi_{{ version }}.tar.gz
-  sha256: 927a82d361e97f6e156cd16e0174812f4134bcc1c64836f6bab696af37b0befd
+  sha256: a928564dea05690c9d988edc54d0134cf928210c746339e97687d1c5bea569c0
 
 build:
-  number: 2
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -24,21 +24,29 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-bslib >= 0.9.0
     - r-digest >=0.6.27
+    - r-ellmer >= 0.4.0
     - r-fastmap >=1.1.0
     - r-formatr >=1.11
-    - r-httr >=1.4.2
+    - r-httr2 >=1.2.1
     - r-jsonlite >=1.7.2
+    - r-s7 >= 0.2.0
     - r-shiny >=1.7.0
+    - r-shinychat >= 0.3.0
     - r-yaml >=2.2.1
   run:
     - r-base
+    - r-bslib >= 0.9.0
     - r-digest >=0.6.27
+    - r-ellmer >= 0.4.0
     - r-fastmap >=1.1.0
     - r-formatr >=1.11
-    - r-httr >=1.4.2
+    - r-httr2 >=1.2.1
     - r-jsonlite >=1.7.2
+    - r-s7 >= 0.2.0
     - r-shiny >=1.7.0
+    - r-shinychat >= 0.3.0
     - r-yaml >=2.2.1
 
 test:
